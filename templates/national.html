@@ -1,0 +1,92 @@
+{% extends "index.html" %}
+
+{% block form %}
+    <form action="/national" method="POST">
+        <select name="airport_name" id="airport_name" onchange="update()" >
+            <option name="airport_name_op" value="all">All airports</option>
+            {% for airport in airports %}
+            <option name="airport_name_op" value={{ airport.attributes.OBJECTID }}> {{ airport.attributes.Texto }} </option>
+        {% endfor %}
+        </select>
+    </form> 
+{% endblock %}
+
+{% block map %}
+    {% if source %}
+        <iframe id="iframe" class="iframe-airports" scrolling="no" srcdoc="{{ source }}"></iframe>
+    {% endif %}
+{% endblock %}
+
+{% block modal %}
+    <div id="modal-background" class="modal-background" onclick="close()"></div>
+    <div id="modal" class="modal">
+        <button class="close" onclick="close()">X</button>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script>
+        function update() {
+            var name = document.getElementById("airport_name");
+            var value = name.value;
+            var response = {
+                "OBJECTID": value
+            }
+        
+            fetch(`${window.origin}/national`, {
+                method: "POST",
+                credentials: "include",
+                body: JSON.stringify(response),
+                cache: "no-cache",
+                headers: new Headers({
+                    "content-type": "application/json"
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("iframe").setAttribute("srcdoc", data.path)
+            })
+            
+        }
+    </script>
+
+    <script>
+        function func() {
+            var name = document.getElementById("flight_button");
+            var value = name.value;
+            var response = {
+                "flight_iata": value
+            }
+            fetch("/", {
+                method: "POST",
+                credentials: "include",
+                body: JSON.stringify(response),
+                cache: "no-cache",
+                headers: new Headers({
+                    "content-type": "application/json"
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                var modal = document.getElementById("modal");
+                var backdrop = document.getElementById("modal-background");
+                if (data.content != null)
+                {
+                    modal.innerHTML = data.content;
+                }
+                backdrop.classList.add("active");
+            })        
+        }
+    </script>
+    <script>
+        function close() {
+            var backdrop = document.getElementById("modal-background");
+            backdrop.classList.remove("active");
+        }
+    </script>
+{% endblock %}
+<!-- 
+<h1>Hey</h1>
+{% block selection %}
+
+{% endblock %} -->

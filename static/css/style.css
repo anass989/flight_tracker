@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: unset;
+}
+
+html, body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.nav {
+    background: #CA3400;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+    align-items: center;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    margin-left: 5%;
+}
+
+ul li {
+    padding: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul li a {
+    color: #FFF;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+
+ul li a:link, ul li a:hover, ul li a:active {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+ul li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 0.1em;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    z-index: 0;
+    width: 100vw;
+    height: 88vh;
+}
+
+iframe#iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+form {
+    position: fixed;
+    right: 2vw;
+    z-index: 0;
+    display: flex;
+    top: 4vh;
+    width: 35%;
+}
+
+form > select{
+    border: none;
+    padding: 0.2rem;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
+    height: 2rem;
+}
+
+form .select-name>#airport-name {
+    z-index: 8;
+}
+
+.show {
+  background: #e74c3c;
+  padding: 0.3em;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  border-bottom: 2px solid #c0392b;
+  cursor: pointer;
+}
+
+.show:hover{
+    background: #c0392b;
+}
+  
+.show:active{
+    transform: scale(0.9);
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 30px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    z-index: 99999 !important;
+}
+  
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 73, 94, 0.8);
+    z-index: 50;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.7s;
+}
+   
+#modal {
+    color: thistle;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 60%;
+    margin-left: -17%;
+    margin-top: -15%;
+    background: #1b1b1b;
+    z-index: 1000;
+
+    visibility: hidden;
+    
+    opacity: 0;
+    
+    transition: 0.5s ease-out;
+
+    transform: translateY(3rem);
+    border-radius: 0.4rem;
+    padding: 2%;
+}
+  
+.modal-background.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-background.active+#modal  {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.flight-timetable {
+    display: flex;
+    flex-direction: column;
+}
+
+.flight-timetable > *{
+    align-items: center;
+    display: flex;
+    padding: 4%;
+    flex-direction: column;
+}
+
+.flight-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.airline-number {
+    font-size: 2em;
+}
+
+.airline-name {
+    font-size: 1.2em;
+}
+
+.airline-code {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.close-form {
+    border: none;
+    background: transparent;
+    color: thistle;
+    z-index: 9000 !important;
+    position: absolute;
+}

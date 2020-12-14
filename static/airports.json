@@ -1,0 +1,580 @@
+{
+    "airports": [
+        {
+            "attributes": {
+                "OBJECTID": 0,
+                "Texto": "Aeropuerto de Jerez",
+                "iata": "XRY",
+                "icao": "LEJR"
+            },
+            "geometry": {
+                "x": -6.0626581480983681,
+                "y": 36.743827704763646
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 1,
+                "Texto": "Aeropuerto de Vigo",
+                "iata": "VGO",
+                "icao": "LEVX"
+            },
+            "geometry": {
+                "x": -8.6304911579603942,
+                "y": 42.225739673891354
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 2,
+                "Texto": "Aeropuerto de Badajoz",
+                "iata": "BJZ",
+                "icao": "LEBZ"
+            },
+            "geometry": {
+                "x": -6.82112054312309,
+                "y": 38.889844791233472
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 3,
+                "Texto": "Aeropuerto de Granada - Jaen F.G.L.",
+                "iata": "GRX",
+                "icao": "LEGR"
+            },
+            "geometry": {
+                "x": -3.7786126652441978,
+                "y": 37.1868259276527
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 4,
+                "Texto": "Aeropuerto de Almeria",
+                "iata": "LEI",
+                "icao": "LEAM"
+            },
+            "geometry": {
+                "x": -2.3712337814246305,
+                "y": 36.844781131660028
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5,
+                "Texto": "Aeropuerto de Salamanca ",
+                "iata": "SLM",
+                "icao": "LESA"
+            },
+            "geometry": {
+                "x": -5.5029552015972181,
+                "y": 40.950757274096084
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6,
+                "Texto": "Aeropuerto de Ibiza",
+                "iata": "IBZ",
+                "icao": "LEIB"
+            },
+            "geometry": {
+                "x": 1.3726690062189437,
+                "y": 38.874351999184341
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 7,
+                "Texto": "Aeropuerto de Lanzarote",
+                "iata": "ACE",
+                "icao": "GCRR"
+            },
+            "geometry": {
+                "x": -13.605020156016689,
+                "y": 28.9510445490425
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 8,
+                "Texto": "Aeropuerto de La Palma",
+                "iata": "SPC",
+                "icao": "GCLA"
+            },
+            "geometry": {
+                "x": -17.753653257093564,
+                "y": 28.622083606031989
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 9,
+                "Texto": "Aeropuerto de Tenerife Norte ",
+                "iata": "TFN",
+                "icao": "GCXO"
+            },
+            "geometry": {
+                "x": -16.347638668052191,
+                "y": 28.485811273199658
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 10,
+                "Texto": "Aeropuerto de La Gomera",
+                "iata": "GMZ",
+                "icao": "GCGM"
+            },
+            "geometry": {
+                "x": -17.211969704013207,
+                "y": 28.031162976991364
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 11,
+                "Texto": "Aeropuerto de Tenerife Sur ",
+                "iata": "TFS",
+                "icao": "GCTS"
+            },
+            "geometry": {
+                "x": -16.575306305762325,
+                "y": 28.045487768865307
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 12,
+                "Texto": "Aeropuerto de Gran Canaria",
+                "iata": "LPA",
+                "icao": "GCLP"
+            },
+            "geometry": {
+                "x": -15.387094294034457,
+                "y": 27.931111276904264
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 13,
+                "Texto": "Aeropuerto de El Hierro",
+                "iata": "VDE",
+                "icao": "GCHI"
+            },
+            "geometry": {
+                "x": -17.886954036626953,
+                "y": 27.814841002331836
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 14,
+                "Texto": "Aeropuerto de Asturias",
+                "iata": "OVD",
+                "icao": "LEAS"
+            },
+            "geometry": {
+                "x": -6.0326183170124539,
+                "y": 43.56219615772018
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 15,
+                "Texto": "Aeropuerto de Valladolid",
+                "iata": "VLL",
+                "icao": "LEVD"
+            },
+            "geometry": {
+                "x": -4.8482541893967515,
+                "y": 41.709020055014435
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 16,
+                "Texto": "Santander-Seve Ballesteros",
+                "iata": "SDR",
+                "icao": "LEXJ"
+            },
+            "geometry": {
+                "x": -3.8228157582060529,
+                "y": 43.4261455946876
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 17,
+                "Texto": "Aeropuerto de San Sebastian",
+                "iata": "EAS",
+                "icao": "LESO"
+            },
+            "geometry": {
+                "x": -1.7916058650535316,
+                "y": 43.356409422872112
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 18,
+                "Texto": "Aeropuerto de Bilbao",
+                "iata": "BIO",
+                "icao": "LEBB"
+            },
+            "geometry": {
+                "x": -2.908357910127648,
+                "y": 43.302506521242378
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 19,
+                "Texto": "Aeropuerto de Cordoba",
+                "iata": "OBD",
+                "icao": "LEBA"
+            },
+            "geometry": {
+                "x": -4.8469470041144325,
+                "y": 37.84386874674621
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 20,
+                "Texto": "Aeropuerto de A Coruña",
+                "iata": "LCG",
+                "icao": "LECO"
+            },
+            "geometry": {
+                "x": -8.37750165001967,
+                "y": 43.302717788204426
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 21,
+                "Texto": "Aeropuerto de Adolfo Suarez Madrid - Barajas",
+                "iata": "MAD",
+                "icao": "LEMD"
+            },
+            "geometry": {
+                "x": -3.57631884464257,
+                "y": 40.492079689959532
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 22,
+                "Texto": "Aeropuerto de Albacete",
+                "iata": "ABC",
+                "icao": "LEAB"
+            },
+            "geometry": {
+                "x": -1.8631635827832396,
+                "y": 38.949634471669086
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 23,
+                "Texto": "Helipuerto de Algeciras",
+                "iata": "AEI",
+                "icao": "LEAG"
+            },
+            "geometry": {
+                "x": -5.440776338303154,
+                "y": 36.128808458709614
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 24,
+                "Texto": "Aeropuerto de Alicante - Elche",
+                "iata": "ALC",
+                "icao": "LEAL"
+            },
+            "geometry": {
+                "x": -0.56334851473995173,
+                "y": 38.285826141322993
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 25,
+                "Texto": "Aeropuerto de Barcelona - El prat",
+                "iata": "BCN",
+                "icao": "LEBL"
+            },
+            "geometry": {
+                "x": 2.0850252848446047,
+                "y": 41.296302239050661
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 26,
+                "Texto": "Aeropuerto de Burgos",
+                "iata": "RGS",
+                "icao": "LEBG"
+            },
+            "geometry": {
+                "x": -3.6216852316428385,
+                "y": 42.354330139219392
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 27,
+                "Texto": "Helipuerto de Ceuta",
+                "iata": "JCU",
+                "icao": "GECE"
+            },
+            "geometry": {
+                "x": -5.3062312061500245,
+                "y": 35.892402181050166
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 28,
+                "Texto": "Aeropuerto de Fuerteventura",
+                "iata": "FUE",
+                "icao": "GCFV"
+            },
+            "geometry": {
+                "x": -13.86619853630584,
+                "y": 28.450567386653876
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 29,
+                "Texto": "Aeropuerto de Girona - Costa Brava",
+                "iata": "GRO",
+                "icao": "LEGE"
+            },
+            "geometry": {
+                "x": 2.7637761950541626,
+                "y": 41.900932963874538
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 30,
+                "Texto": "Aeropuerto de Huesca Pirineos",
+                "iata": "HSK",
+                "icao": "LEHC"
+            },
+            "geometry": {
+                "x": -0.3176329638954406,
+                "y": 42.076621619181225
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 31,
+                "Texto": "Aeropuerto de Leon",
+                "iata": "LEN",
+                "icao": "LELN"
+            },
+            "geometry": {
+                "x": -5.6544632661761707,
+                "y": 42.589828330814328
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 32,
+                "Texto": "Aeropuerto de Logroño - Agoncillo",
+                "iata": "RJL",
+                "icao": "LERJ"
+            },
+            "geometry": {
+                "x": -2.3172773829790878,
+                "y": 42.459594905136143
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 33,
+                "Texto": "Aeropuerto de Madrid - Cuatro vientos",
+                "iata": "ECV",
+                "icao": "LECU"
+            },
+            "geometry": {
+                "x": -3.7851033399216742,
+                "y": 40.370627641821628
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 34,
+                "Texto": "Aeropuerto de Malaga - Costa del Sol",
+                "iata": "AGP",
+                "icao": "LEMG"
+            },
+            "geometry": {
+                "x": -4.49669999056667,
+                "y": 36.676309434933842
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 35,
+                "Texto": "Aeropuerto de Melilla",
+                "iata": "MLN",
+                "icao": "GEML"
+            },
+            "geometry": {
+                "x": -2.955934890243701,
+                "y": 35.27923179194206
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 36,
+                "Texto": "Aeropuerto de Menorca",
+                "iata": "MAH",
+                "icao": "LEMH"
+            },
+            "geometry": {
+                "x": 4.2213858296627818,
+                "y": 39.864483644680085
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 37,
+                "Texto": "Aeropuerto de Murcia - San Javier",
+                "iata": "RMU",
+                "icao": "LEMI"
+            },
+            "geometry": {
+                "x": -0.81698493724599563,
+                "y": 37.773074080021807
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 38,
+                "Texto": "Aeropuerto de Palma de Mallorca",
+                "iata": "PMI",
+                "icao": "LEPA"
+            },
+            "geometry": {
+                "x": 2.7318250562674762,
+                "y": 39.549868408141066
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 39,
+                "Texto": "Aeropuerto de Pamplona",
+                "iata": "PNA",
+                "icao": "LEPP"
+            },
+            "geometry": {
+                "x": -1.6427740047751931,
+                "y": 42.765107506729173
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 40,
+                "Texto": "Aeropuerto de Reus",
+                "iata": "REU",
+                "icao": "LERS"
+            },
+            "geometry": {
+                "x": 1.1585050387940892,
+                "y": 41.146491453283467
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 41,
+                "Texto": "Aeropuerto de Sabadell",
+                "iata": "QSA",
+                "icao": "LELL"
+            },
+            "geometry": {
+                "x": 2.1047916346933047,
+                "y": 41.520997114781053
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 42,
+                "Texto": "Aeropuerto de Santiago",
+                "iata": "SCQ",
+                "icao": "LEST"
+            },
+            "geometry": {
+                "x": -8.4179610059501169,
+                "y": 42.897422173690188
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 43,
+                "Texto": "Aeropuerto de Sevilla",
+                "iata": "SVQ",
+                "icao": "LEZL"
+            },
+            "geometry": {
+                "x": -5.89862365719406,
+                "y": 37.419749023768233
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 44,
+                "Texto": "Aeropuerto de Son Bonet",
+                "iata": "",
+                "icao": "LESB"
+            },
+            "geometry": {
+                "x": 2.7052741344213782,
+                "y": 39.601477659237
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 45,
+                "Texto": "Aeropuerto de Valencia",
+                "iata": "VLC",
+                "icao": "LEVC"
+            },
+            "geometry": {
+                "x": -0.48052120809048721,
+                "y": 39.490968627769995 
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 46,
+                "Texto": "Aeropuerto de Vitoria",
+                "iata": "VIT",
+                "icao": "LEVT"
+            },
+            "geometry": {
+                "x": -2.7311581613735805,
+                "y": 42.879158451270769
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 47,
+                "Texto": "Aeropuerto de Zaragoza",
+                "iata": "ZAZ",
+                "icao": "LEZG"
+            },
+            "geometry": {
+                "x": -1.0603488379155588,
+                "y": 41.670549698192865
+            }
+        }
+    ]
+}

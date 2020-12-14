@@ -1,0 +1,49 @@
+{% extends "template.html" %}
+
+{% block form %}
+    {{ super() }}
+    <form action=""} method="POST">
+        <p>hello</p>
+        <select name="airport_name" id="airport_name" >
+        {% for airport in airports %}
+            <option name="" value={{ airport.attributes.OBJECTID }}> {{ airport.attributes.Texto }} </option>
+        {% endfor %}
+        </select>
+        <input type="button" name="submit" value="Submit" onclick="func()">
+    </form> 
+{% endblock %}
+
+{% block map %}
+    {% include icao + ".html" %}
+{% endblock %}
+
+{% block script %}
+    <script>
+        function func() {
+            var name = document.getElementById("airport_name");
+            var value = name.value;
+            var response = {
+                "OBJECTID": value
+            }
+        
+            alert(value);
+            fetch(`${window.origin}/test`, {
+                method: "POST",
+                credentials: "include",
+                body: JSON.stringify(response),
+                cache: "no-cache",
+                headers: new Headers({
+                    "content-type": "application/json"
+                })
+            })
+            .then(function(response) {
+
+            })
+        }
+    </script>
+{% endblock %}
+<!-- 
+<h1>Hey</h1>
+{% block selection %}
+
+{% endblock %} -->

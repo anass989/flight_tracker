@@ -1,0 +1,57 @@
+{% extends "index.html" %}
+
+{% block map %}
+    {% include "map.html" %}
+{% endblock %}
+
+{% block modal %}
+    <div id="modal-background" class="modal-background" onclick="close()" onkeydown="escape()"></div>
+    <div id="modal" class="modal">
+        <button onclick="close()" class="close-form">X</button>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script>
+        function func() {
+            var name = document.getElementById("flight_button");
+            var value = name.value;
+            var response = {
+                "flight_iata": value
+            }
+            fetch("/", {
+                method: "POST",
+                credentials: "include",
+                body: JSON.stringify(response),
+                cache: "no-cache",
+                headers: new Headers({
+                    "content-type": "application/json"
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                var modal = document.getElementById("modal");
+                var backdrop = document.getElementById("modal-background");
+                if (data.content != null)
+                {
+                    modal.innerHTML = data.content;
+                }
+                backdrop.classList.add("active");
+                backdrop.addEventListener("click", event);
+            })        
+        }
+    
+        function escape(evt) {
+          if (evt.keyCode == 27) {
+            backdrop.classList.remove("active");
+            window.close();
+          }
+        }
+    </script>
+    <script> 
+        function close() {
+        var backdrop = document.getElementById("modal-background");
+            backdrop.classList.remove("active");
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,14 @@
+
+    {% if flight %}
+    <span>{{ flight["data"][0]["departure"]["iata"]}}</span>
+    <span>{{ flight["data"][0]["departure"]["airport"]}}</span>
+    <span>{{ flight["data"][0]["departure"]["scheduled"]}}</span>
+    <span>{{ flight["data"][0]["departure"]["actual"]}}</span>
+    <span>{{ flight["data"][0]["departure"]["timezone"]}}</span>
+
+    <span>{{ flight["data"][0]["arrival"]["iata"]}}</span>
+    <span>{{ flight["data"][0]["arrival"]["airport"]}}</span>
+    <span>{{ flight["data"][0]["arrival"]["scheduled"]}}</span>
+    <span>{{ flight["data"][0]["arrival"]["estimated"]}}</span>
+    <span>{{ flight["data"][0]["arrival"]["timezone"]}}</span>
+    {% endif %}
